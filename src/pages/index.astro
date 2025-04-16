@@ -1,23 +1,8 @@
 ---
-	import Navigation from '../components/Navigation.astro';
-	import "../styles/global.css";
-	import Footer from '../components/Footer.astro';
+import BaseLayout from '../layouts/Baselayout.astro';
+const pageTitle = "Home Page";
 ---
 
-
-
-<html lang="en">
-	<head>
-		<meta charset = "utf-8" />
-		<title>Erik's Website</title>
-	</head>
-	<body>
-		<Navigation />
-		<h1>My Second Website.</h1>
-
-		<Footer />
-			<script>
-				import "../scripts/menu.js";
-  			</script>
-	</body>
-</html>
+<BaseLayout pageTitle = {pageTitle}>
+	<p>Welcome to the home page!</p>
+</BaseLayout>
